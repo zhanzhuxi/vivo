@@ -3,24 +3,15 @@ package com.jk1603.vivo.admin.pojo;
 import java.math.BigDecimal;
 
 public class Goods {
-	private int id;
-	private String goodsName;
+	private Integer id;
+	private String goodsname;
 	private BigDecimal price;
 	private String details;
-//	private String color;
-	private Category category;
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getGoodsName() {
-		return goodsName;
-	}
-	public void setGoodsName(String goodsName) {
-		this.goodsName = goodsName;
-	}
+	private String color;
+	private String category;
+	private String discount;
+	private Boolean ischecked;
+	private String imgurl;
 	public BigDecimal getPrice() {
 		return price;
 	}
@@ -33,10 +24,46 @@ public class Goods {
 	public void setDetails(String details) {
 		this.details = details;
 	}
-	public Category getCategory() {
+	public String getGoodsname() {
+		return goodsname;
+	}
+	public void setGoodsname(String goodsname) {
+		this.goodsname = goodsname;
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getCategory() {
 		return category;
 	}
-	public void setCategory(Category category) {
+	public void setCategory(String category) {
 		this.category = category;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public String getDiscount() {
+		return discount;
+	}
+	public void setDiscount(String discount) {
+		this.discount = discount;
+	}
+	public String getImgurl() {
+		return imgurl;
+	}
+	public void setImgurl(String imgurl) {
+		this.imgurl = imgurl;
+	}
+	public Boolean getIschecked() {
+		return ischecked;
+	}
+	public void setIschecked(Boolean ischecked) {
+		this.ischecked = ischecked;
 	}
 }

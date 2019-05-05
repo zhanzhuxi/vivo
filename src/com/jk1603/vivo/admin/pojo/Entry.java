@@ -1,33 +1,19 @@
 package com.jk1603.vivo.admin.pojo;
 
-import java.math.BigDecimal;
-import java.util.Date;
-
 public class Entry {
-	private int Id;
+	private Integer id;
 	private Goods goods;
-	private int goodsQuantity;
+	private int goodsquantity;
 //	private BigDecimal goodsPrice;
 //	private Date entryTime;
 	private Admin admin;
 	private String state;
-	public int getId() {
-		return Id;
-	}
-	public void setId(int id) {
-		Id = id;
-	}
+	private Boolean ischecked;
 	public Goods getGoods() {
 		return goods;
 	}
 	public void setGoods(Goods goods) {
 		this.goods = goods;
-	}
-	public int getGoodsQuantity() {
-		return goodsQuantity;
-	}
-	public void setGoodsQuantity(int goodsQuantity) {
-		this.goodsQuantity = goodsQuantity;
 	}
 //	public BigDecimal getGoodsPrice() {
 //		return goodsPrice;
@@ -52,6 +38,24 @@ public class Entry {
 	}
 	public void setState(String state) {
 		this.state = state;
+	}
+	public int getGoodsquantity() {
+		return goodsquantity;
+	}
+	public void setGoodsquantity(int goodsquantity) {
+		this.goodsquantity = goodsquantity;
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public Boolean getIschecked() {
+		return ischecked;
+	}
+	public void setIschecked(Boolean ischecked) {
+		this.ischecked = ischecked;
 	}
 	
 }
